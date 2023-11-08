@@ -199,3 +199,37 @@ j = 10
 while j >= 1:
     print(j * '*')
     j -= 1
+
+num = int(input("Write: "))
+
+def down(num):
+    while num > 0:
+        print(num)
+        num -= 1
+    print("Done")
+
+down(num)
+
+while True:
+    end = input("> ").lower()
+    if end == 'done':
+        break
+    else:
+        print("Invalid Value")
+print("Work terminated")
+
+attempts = 3
+count = 0
+secret_number = 9
+
+while count < attempts:
+    guess = int(input("Guess number: "))
+    count += 1
+    if guess == secret_number:
+        print("You Won game!")
+        break
+    elif count == attempts:
+        print("Game Over.")
+    else:
+        print("Sorry, incorrect!")
+
