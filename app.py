@@ -182,4 +182,20 @@ else:
     print("Input 0 invalid")
 
 
+write = int(input("From: "))
+to = int(input("To: "))
 
+while write <= to:
+    print(write)
+    write += 1
+
+
+i = 1
+
+while i <= 10:
+    print(i * '*')
+    i += 1
+j = 10
+while j >= 1:
+    print(j * '*')
+    j -= 1
