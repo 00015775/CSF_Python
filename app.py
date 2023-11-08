@@ -232,4 +232,22 @@ while count < attempts:
         print("Game Over.")
     else:
         print("Sorry, incorrect!")
+ # by default \n is used to make a new line, with end='' new code will be on the same line with the previous code
+print("Hello!", end="")
+print("World")
+print("Very exicted about my job!")
 
+# range function
+
+n = 10
+
+for scroll in range(n):
+    for xcode in range(scroll):
+        print('* ', end='')
+    print("")
+
+
+num = range(10, -1, -1)
+
+for x in num:
+    print("* " * x)
